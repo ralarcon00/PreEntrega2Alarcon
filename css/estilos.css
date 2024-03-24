@@ -1,0 +1,23 @@
+.h1-paginas{
+text-align: center;
+text-transform: uppercase;
+margin: 15px;
+text-decoration: solid;
+font-weight: bolder;
+font-size: clamp(2em, 5vw, 5em);
+}
+
+#ContainersTienda{
+    box-shadow: 0 0 8px;
+    width: 98%;
+    background-color: white;
+}
+
+body{
+    background-color: darkgoldenrod;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
