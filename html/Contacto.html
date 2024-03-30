@@ -8,9 +8,11 @@
     <!--Css Estilos-->
 <link rel="stylesheet" href="../css/estilos.css">
     <title>NeoGadgets Contacto</title>
+</head>
+<body>
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="../img/logo-oficial.png" alt="Logo de la empresa" width="180px"></a>
+          <a class="navbar-brand" href="../index.html"><img src="../img/logo-oficial.png" alt="Logo de la empresa" width="200px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,19 +39,18 @@
         </div>
       </nav>
     <h1 class="h1-paginas">Contacto</h1>
-</head>
-<body>
-    <main class="mb-2">
-    <div class="container" id="Container Contacto">
-        <form>
+
+    <main class="mb-2" id="FormularioDeContacto">
+    <div class="container-fluid" id="ContainerContacto">
+        <form id="ContenidoFormulario">
             <label for="name">Nombre</label>
-            <input type="text" id="name">
+            <input type="text" id="name" class="container-fluid">
             
             <label for="last name">Apellido</label>
-            <input type="text" id="last name">
+            <input type="text" id="last name" class="container-fluid">
             
             <label for="MESSAGE"></label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="por favor comparte más detalles con nosotros"></textarea>
+            <textarea class="container-fluid" name="" id="" cols="30" rows="10" placeholder="por favor comparte más detalles con nosotros"></textarea>
             
             <input class="btnformulario" type="submit">
             <input class="btnformulario" type="reset">
@@ -58,9 +59,6 @@
 
     </div>
 </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
-</body>
 <footer>
     <div class="container-fluid">
         <div class="row p-5  bg-dark text-white">
@@ -68,9 +66,9 @@
                 <p class="h3">NEOGADGETS</p>
                 <p class="text-secondary">Ciudad de México, MX</p>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <p>Productos</p>
-                <div class="mb-2">
+            <div class="col-xs-12 col-md-6 col-lg-3" id="TextoFooter">
+                <p class="h5 mb-3">Productos</p>
+                <div class="mb-1">
                     <a class="text-secondary text-decoration-none" href="">Displays</a>
                 </div>
                 <div class="mb-2">
@@ -83,8 +81,8 @@
                     <a class="text-secondary text-decoration-none" href=""> Lámparas</a>
                 </div>
             </div>
-            <div class=" col-xs-12 col-md-6 col-lg-3">
-                <p class="h5 mb-3">Links</p>
+            <div class=" col-xs-12 col-md-6 col-lg-3" id="TextoFooter">
+                <p class="h5 mb-3" >Links</p>
                 <div class="mb-2">
                     <a class="text-secondary text-decoration-none" href="">Términos y Condiciones</a>
                 </div>
@@ -92,7 +90,7 @@
                     <a class="text-secondary text-decoration-none" href="">Política de Privacidad</a>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="col-xs-12 col-md-6 col-lg-3" id="TextoFooter">
                 <p class="h5 mb-3">Contacto</p>
             <div class="mb-2">
                 <a class="text-secondary text-decoration-none" href="">Instagram</a>
@@ -107,4 +105,8 @@
         </div>
     </div>
 </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+</body>
 </html>

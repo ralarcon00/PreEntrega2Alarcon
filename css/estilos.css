@@ -1,3 +1,13 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+
 .h1-paginas{
 text-align: center;
 text-transform: uppercase;
@@ -12,15 +22,14 @@ font-size: clamp(2em, 5vw, 5em);
     width: 98%;
     background-color: white;
 }
-
 body{
     background-color: darkgoldenrod;
 }
 
-
 footer{
     background-color: black;
     color: white;
+    max-height: 10%;
 }
 
 form{
@@ -38,7 +47,7 @@ label{
 
 input,
 textarea{
-    width: 50%;
+    min-width: 30%;
     padding: 10px;
     border: 2px solid black;
     border-radius: 5px;
@@ -69,8 +78,7 @@ font-weight: bolder;
 font-size: clamp(2em, 2vw, 2em);
 }
 p{
-    text-align: center;
-    margin: 15px;
+margin: 15px;
 text-decoration: solid;
 font-weight: normal;
 font-size: clamp(1.2em, 1.2vw, 1.2em);
@@ -80,7 +88,6 @@ font-size: clamp(1.2em, 1.2vw, 1.2em);
     padding: 25px;
     margin: 0 !important;
 }
-
 #galeria img{
     width: 100%;
     height: 350px;
@@ -96,4 +103,29 @@ border: 2px solid goldenrod;
 text-decoration: solid;
 font-weight: normal;
 font-size: clamp(1.2em, 1.2vw, 1.2em);
+}
+
+
+#TextoFooter{
+    text-align: center;
+}
+
+.d-flex{
+    margin: 10px;
+}
+
+
+.grid-layout{
+    display: grid;
+    background-color: burlywood;
+    border: 15px solid black;
+    min-width: 50%;
+    max-width: 80%;
+    padding: 15px;
+}
+
+@media(max-width:500px){
+    body{
+background-color: rgba(253, 199, 73, 0.837);
+    }
 }
